@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title>My Django</title>
+    </head>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+
+    <body style="background-color: cadetblue;">
+        <h1 style="background-color: aqua;">Movies</h1>
+        <table>
+          <tr>
+            <th>Movie Name</th>
+            <th>Year</th>
+          </tr>
+          {% for movie in movies %}   
+          <tr>
+            <td>  
+                {{movie.name}}
+               
+                 </td>
+
+            <td>     
+               {{movie.year}} 
+               
+                 </td>
+          </tr>
+          {% endfor %}
+            
+               
+            
+        </table>
+       
+    </body>
+    
+
+</html>
+
+
+
+
+
